@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2018-02-08T17:12:43+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/user/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/user/index.html [运行时间：0.322019s][吞吐率：3.11req/s] [内存消耗：5,462.49kb] [文件加载：65]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'field list'[F:\wamp\www\wanmeinh\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-02-08T17:22:58+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/user/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/user/index.html [运行时间：0.185010s][吞吐率：5.41req/s] [内存消耗：5,516.96kb] [文件加载：63]
+[ error ] [8]未定义变量: sreach[F:\wamp\www\wanmeinh\app\admin\controller\User.php:31]
+---------------------------------------------------------------
+[ 2018-02-08T17:23:21+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/user/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/user/index.html [运行时间：0.196011s][吞吐率：5.10req/s] [内存消耗：5,820.41kb] [文件加载：65]
+[ error ] [0]类的属性不存在:app\admin\model\User->pid[F:\wamp\www\wanmeinh\thinkphp\library\think\Model.php:573]

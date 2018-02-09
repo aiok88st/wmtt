@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        试题
+    </div>
+</body>
+</html>
+<script>
+    //试题
+    function addT(){
+        var url = "<{:url('index/addTest')}>";
+        $.post(url,{"name":name},function(res){
+            if(res.code == 1){
+                alert('提交成功');
+            }else{
+                alert('提交失败');
+            }
+        });
+    }
+</script>

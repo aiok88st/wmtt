@@ -1,0 +1,44 @@
+---------------------------------------------------------------
+[ 2018-02-02T14:58:43+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/
+[ info ] 127.0.0.1/wanmeinh/public/ [运行时间：0.753043s][吞吐率：1.33req/s] [内存消耗：4,770.70kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wmtt.admin_red_list' doesn't exist[F:\wamp\www\wanmeinh\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-02-02T15:03:40+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/test/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/test/index.html [运行时间：0.172009s][吞吐率：5.81req/s] [内存消耗：5,871.18kb] [文件加载：67]
+[ error ] [8]未定义变量: types[F:\wamp\www\wanmeinh\runtime\temp\6648d5b2335e354cea09a153205b2cfd.php:53]
+---------------------------------------------------------------
+[ 2018-02-02T15:05:28+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/test/create.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/test/create.html [运行时间：0.135007s][吞吐率：7.41req/s] [内存消耗：5,466.15kb] [文件加载：62]
+[ error ] [8]未定义变量: types[F:\wamp\www\wanmeinh\runtime\temp\97286352dcac69da48412b83adebc23e.php:89]
+---------------------------------------------------------------
+[ 2018-02-02T15:34:36+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/product/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/product/index.html [运行时间：0.132007s][吞吐率：7.58req/s] [内存消耗：5,564.44kb] [文件加载：63]
+[ error ] [8]未定义变量: sreach[F:\wamp\www\wanmeinh\runtime\temp\8edf6610b0aaeb682d8edfc0929683bc.php:51]
+---------------------------------------------------------------
+[ 2018-02-02T15:35:56+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/product/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/product/index.html [运行时间：0.134007s][吞吐率：7.46req/s] [内存消耗：5,566.75kb] [文件加载：63]
+[ error ] [8]未定义变量: list[F:\wamp\www\wanmeinh\runtime\temp\8edf6610b0aaeb682d8edfc0929683bc.php:77]
+---------------------------------------------------------------
+[ 2018-02-02T15:39:49+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/product/create.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/product/create.html [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：5,450.75kb] [文件加载：62]
+[ error ] [8]未定义变量: role_list[F:\wamp\www\wanmeinh\runtime\temp\0076d94fbcf58c09cea3e1c493ea388c.php:33]
+---------------------------------------------------------------
+[ 2018-02-02T15:56:13+08:00 ] 127.0.0.1 127.0.0.1 POST /wanmeinh/public/admin/admin/save.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/admin/save.html [运行时间：0.104005s][吞吐率：9.61req/s] [内存消耗：5,257.40kb] [文件加载：60]
+[ error ] [8]未定义数组索引: group_id[F:\wamp\www\wanmeinh\app\admin\controller\Admin.php:80]
+---------------------------------------------------------------
+[ 2018-02-02T16:11:47+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/product/edit/id/1.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/product/edit/id/1.html [运行时间：0.117007s][吞吐率：8.55req/s] [内存消耗：5,230.34kb] [文件加载：57]
+[ error ] [0]类的属性不存在:app\admin\model\Product->content[F:\wamp\www\wanmeinh\thinkphp\library\think\Model.php:573]
+---------------------------------------------------------------
+[ 2018-02-02T16:14:17+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/product/edit/id/1.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/product/edit/id/1.html [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：5,230.34kb] [文件加载：57]
+[ error ] [0]类的属性不存在:app\admin\model\Product->content[F:\wamp\www\wanmeinh\thinkphp\library\think\Model.php:573]
+---------------------------------------------------------------
+[ 2018-02-02T17:19:30+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/index/index/add.html?num=12
+[ info ] 127.0.0.1/wanmeinh/public/index/index/add.html?num=12 [运行时间：0.132008s][吞吐率：7.58req/s] [内存消耗：5,368.53kb] [文件加载：62]
+[ error ] [0]数据表字段不存在:[num][F:\wamp\www\wanmeinh\thinkphp\library\think\db\Builder.php:109]
+---------------------------------------------------------------
+[ 2018-02-02T17:54:16+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/index/index/person.html
+[ info ] 127.0.0.1/wanmeinh/public/index/index/person.html [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：3,342.61kb] [文件加载：51]
+[ error ] [0]模板文件不存在:F:\wamp\www\wanmeinh\app\index/../../public/template/index\index\person.html[F:\wamp\www\wanmeinh\thinkphp\library\think\view\driver\Think.php:80]

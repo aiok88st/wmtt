@@ -1,0 +1,112 @@
+<extend name="common/common"></extend>
+<block name="body">
+
+    <include file="common/nav"/>
+    <div class="x-body">
+        <div class="layui-row">
+            <form method="get" action="<{:url('Prize/index')}>" class="layui-form layui-col-md12 x-so">
+                <div class="layui-input-inline" style="width: 100px">
+                    <select name="status" lay-verify="required">
+                        <volist name="types" id="vo">
+                            <option value="<{$vo.id}>" <if condition="$sreach['type'] eq $vo['id']">selected</if>><{$vo.type}></option>
+                        </volist>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" name="key" value="<{$sreach['key']}>" placeholder="请输入用户名/电话" autocomplete="off" class="layui-input">
+                </div>
+
+                <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+            </form>
+        </div>
+        <xblock>
+            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+            <button class="layui-btn" onclick="get_csv('<{$sreach['type']}>')">导出数据</button>
+
+        </xblock>
+        <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+        <table class="layui-table">
+            <thead>
+            <tr>
+                <th>
+                    <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+                </th>
+                <th>奖品名称</th>
+                <th>奖品数量</th>
+                <th>用户</th>
+                <th>兑奖时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>
+                    <td>
+                        <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<{$vo['id']}>'><i class="layui-icon">&#xe605;</i></div>
+                    </td>
+                    <td><{$vo['pid']}></td>
+                    <td><{$vo['number']}></td>
+                    <td><{$vo['open_id']}></td>
+                    <td><{$vo['add_time']}></td>
+                    <td class="td-manage" >
+                        <a title="处理"  onclick="chStatus('<{$vo['id']}>')" href="javascript:;">
+                            处理
+                        </a>
+                        <a title="删除" onclick="delAll('<{$vo['id']}>')" href="javascript:;">
+                            删除
+                        </a>
+                    </td>
+                </tr>
+            </volist>
+    </tbody>
+    </table>
+
+    <div class="page">
+        <{$page}>
+    </div>
+    </div>
+    <script type="text/javascript">
+        layui.use(['layer'], function(){
+            $ = layui.jquery;
+            var layer = layui.layer;
+
+        });
+        function delAll(argument) {
+            var data;
+            if(argument){
+                data =[argument];
+            }else{
+                data = tableCheck.getData();
+            }
+            var token=$('[name="__token__"]').val();
+            layer.confirm('确认删除这条数据？',function(index){
+                //捉到所有被选中的，发异步进行删除
+                //捉到所有被选中的，发异步进行删除
+                var url="<{:url('Prize/delete')}>";
+                AjaxP(url,'POST',{"ids":data,"__token__":token},function(res){
+                    if(res.code==1){
+                        deleCall();
+                    }
+                });
+
+            });
+        }
+
+        function chStatus(id){
+            var url="<{:url('Prize/changeS')}>";
+            $.post(url, {"id":id}, function(res) {
+                if(res.code == 1) {
+                    location.reload();
+                }else {
+                    layer.msg('设置失败')
+                }
+            }, 'json');
+        }
+
+        function get_csv(status){
+            window.location.href="<{:url('Prize/e_csv')}>?status="+status;
+        }
+
+    </script>
+    </body>
+</block>

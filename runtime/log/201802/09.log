@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2018-02-09T15:12:41+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/mark/e_csv.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/mark/e_csv.html [运行时间：0.448026s][吞吐率：2.23req/s] [内存消耗：5,196.48kb] [文件加载：58]
+[ error ] [8]未定义数组索引: name[F:\wamp\www\wanmeinh\app\admin\controller\Mark.php:45]
+---------------------------------------------------------------
+[ 2018-02-09T15:14:48+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/mark/e_csv.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/mark/e_csv.html [运行时间：0.122007s][吞吐率：8.20req/s] [内存消耗：5,197.22kb] [文件加载：58]
+[ error ] [8]未定义数组索引: name[F:\wamp\www\wanmeinh\app\admin\controller\Mark.php:45]

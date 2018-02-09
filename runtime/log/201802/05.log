@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2018-02-05T15:15:13+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/prize/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/prize/index.html [运行时间：0.338019s][吞吐率：2.96req/s] [内存消耗：5,842.69kb] [文件加载：69]
+[ error ] [8]Array to string conversion[F:\wamp\www\wanmeinh\runtime\temp\2ddcf87cd0f254ba156515c2e74c96b4.php:87]
+---------------------------------------------------------------
+[ 2018-02-05T16:49:48+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/prize/index.html
+[ info ] 127.0.0.1/wanmeinh/public/admin/prize/index.html [运行时间：0.228013s][吞吐率：4.39req/s] [内存消耗：5,782.59kb] [文件加载：67]
+[ error ] [8]未定义变量: request[F:\wamp\www\wanmeinh\app\admin\controller\Prize.php:39]
+---------------------------------------------------------------
+[ 2018-02-05T17:10:49+08:00 ] 127.0.0.1 127.0.0.1 GET /wanmeinh/public/admin/prize/index.html?status=0&key=%E6%9D%8E%E5%9B%9B
+[ info ] 127.0.0.1/wanmeinh/public/admin/prize/index.html?status=0&key=%E6%9D%8E%E5%9B%9B [运行时间：0.128008s][吞吐率：7.81req/s] [内存消耗：5,171.98kb] [文件加载：58]
+[ error ] [8]未定义变量: uid[F:\wamp\www\wanmeinh\app\admin\controller\Prize.php:28]
